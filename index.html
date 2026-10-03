@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website + Hosting Package</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav><b>🌐 SiteNest</b><a class="btn" href="#contact">Get started</a></nav>
+
+  <header class="hero">
+    <div>
+      <h1>Your domain, website and hosting. One package.</h1>
+      <p>We register your domain, design a fast mobile-friendly site, host it securely and keep it updated every month.</p>
+      <a class="btn" href="#plans">See packages</a>
+    </div>
+    <div class="finder">
+      <h3>Find your domain</h3>
+      <div class="row">
+        <input id="dom" placeholder="yourbusiness" aria-label="Domain name" autocomplete="off">
+        <button class="btn" id="chk" type="button">Check</button>
+      </div>
+      <div class="tlds" role="radiogroup" aria-label="Extension">
+        <label><input type="radio" name="tld" value=".com" checked><span>.com</span></label>
+        <label><input type="radio" name="tld" value=".in"><span>.in</span></label>
+        <label><input type="radio" name="tld" value=".co.in"><span>.co.in</span></label>
+      </div>
+      <div id="result" aria-live="polite">Type a name to check (demo).</div>
+    </div>
+  </header>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>Everything your site needs</h2>
+    <p class="sub">No separate vendors to manage. One team handles it all.</p>
+    <div class="feat">
+      <div><span class="ic">🔗</span><h3>Custom domain</h3><p>Register a .com, .in or .co.in name, set up and renewed for you.</p></div>
+      <div><span class="ic">⚡</span><h3>Fast, secure cloud hosting</h3><p>Reliable servers with daily backups and quick page loads.</p></div>
+      <div><span class="ic">📱</span><h3>Mobile-responsive design</h3><p>A modern look that works on phones, tablets and desktops.</p></div>
+      <div><span class="ic">🔒</span><h3>SSL certificate</h3><p>HTTPS on every page, so visitors see the padlock.</p></div>
+      <div><span class="ic">🛠️</span><h3>Monthly maintenance</h3><p>Updates, fixes and small content changes included each month.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="wrap">
+    <h2>Pick a package</h2>
+    <p class="sub">Sample pricing for the demo. Change it to match your offer.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Starter</h3>
+        <div class="price">₹9,999<small> / year</small></div>
+        <ul><li>.in domain</li><li>Up to 5 pages</li><li>SSL certificate</li><li>Mobile-responsive design</li></ul>
+        <a class="btn" href="#contact" data-plan="Starter">Choose Starter</a>
+      </div>
+      <div class="plan pop">
+        <span class="tag">Most popular</span>
+        <h3>Business</h3>
+        <div class="price">₹19,999<small> / year</small></div>
+        <ul><li>.com or .co.in domain</li><li>Up to 12 pages</li><li>Cloud hosting + backups</li><li>Monthly maintenance</li></ul>
+        <a class="btn" href="#contact" data-plan="Business">Choose Business</a>
+      </div>
+      <div class="plan">
+        <h3>Growth</h3>
+        <div class="price">₹39,999<small> / year</small></div>
+        <ul><li>Any domain extension</li><li>Unlimited pages</li><li>Priority support</li><li>Weekly maintenance</li></ul>
+        <a class="btn" href="#contact" data-plan="Growth">Choose Growth</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Tell us about your site</h2>
+    <p class="sub">We reply within one working day.</p>
+    <form class="contact" id="form">
+      <input name="name" placeholder="Your name" required aria-label="Your name">
+      <input name="email" type="email" placeholder="Email address" required aria-label="Email address">
+      <select id="plan" aria-label="Package"><option>Starter</option><option selected>Business</option><option>Growth</option></select>
+      <textarea rows="3" placeholder="What does your business do?" aria-label="About your business"></textarea>
+      <button class="btn" type="submit">Request a quote</button>
+      <div id="msg" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<footer><div class="wrap">© 2026 SiteNest. Demo page.</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
